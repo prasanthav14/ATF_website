@@ -1,0 +1,149 @@
+.bodyCls {
+    height: 100%;
+    width: 98%;
+    /* margin: auto; */
+}
+
+.cardCls {
+    /* width: 22rem; */
+    width: 93%;
+    height: 100%;
+    background-color: whitesmoke;
+    margin: auto;
+}
+.cardImgdiv{
+    width: 100%;
+    height: 59%
+}
+.allcardImgdiv{
+    width: 100%;
+    height: 59%
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%
+}
+
+.tagCls {
+    /* background-color: rgb(255, 235, 147); */
+    background-color: crimson;
+    color: #fff;
+    border-radius: 10px;
+    width: max-content;
+    margin-right: .75rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+    font-size: small;
+    padding: 4px
+}
+
+.cardCont {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    /* font-family: cursive; */
+    font-family: 'Kite One', sans-serif;
+}
+
+.cardCls:hover {
+    background-color: linen;
+    /* background-image: url("https://www.transparenttextures.com/patterns/wet-snow.png"); */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.ytDiv {
+    padding: 0%;
+    margin: 0%;
+    width: max-content;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 1.5rem;
+}
+
+.igDiv {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 8px;
+    width: max-content;
+    position: absolute;
+    bottom: 3rem;
+    left: 5rem;
+}
+
+.ytCls {
+    text-decoration: none;
+    color: red;
+    margin-right: 1rem;
+}
+
+.favDiv {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 8px;
+    width: max-content;
+    position: absolute;
+    bottom: 3.2rem;
+    left: 2.5rem;
+}
+
+.igCls {
+    margin-right: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+
+.linkCls {
+    text-decoration: none;
+}
+
+.preCls {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0%;
+    margin: 0%;
+    font-size: x-small;
+    color: grey;
+}
+
+.likesCls {
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    padding: 0%;
+    margin: 0%;
+    font-size: small;
+    /* color: grey; */
+}
+
+.showCls {
+    text-align: center;
+    margin-top: 2rem;
+    /* margin-bottom: 2rem; */
+    font-weight: bold;
+    font-size: large;
+    color: orangered;
+}
+
+:hover.showCls {
+    font-weight: bolder;
+    font-size: larger;
+    color: orangered
+}
+
+.newpostCls {
+    text-decoration: none;
+    color: gold;
+    text-align: right;
+}

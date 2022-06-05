@@ -1,0 +1,19 @@
+.aboutImg {
+    width: 75%;
+    height: auto;
+    /* text-align: center; */
+    
+}
+.brandFont{
+  font-family: 'Sacramento', cursive;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.titleClas {
+    font-weight: 800;
+    font-size: xx-large;
+    color: sienna;
+    text-decoration: underline;
+}
+  
