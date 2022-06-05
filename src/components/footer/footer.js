@@ -23,7 +23,7 @@ function Footer() {
 
                 <div className="row">
                     <div className="d-flex justify-content-center my-auto col-lg-6 col-12">
-                        <img className="me-2" alt="atf-logo-sm" src='img/ATF_logo_sm.JPG' width="30" height="30" />
+                        <img className="me-2" alt="atf-logo-sm" src='img/ATF_logo_sm.jpg' width="30" height="30" />
                         <p>&copy; 2022 Company, Inc</p>
                     </div>
                     <div style={{ textAlign: "center"}} className="d-flex justify-content-center my-auto col-lg-6 col-12">

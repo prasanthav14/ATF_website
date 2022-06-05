@@ -10,7 +10,7 @@ function Newrecipiestitle() {
             <div className='row correctionCls'>
                 <div className='col-lg-4' style={{ textAlign: "center" }}>
                     <div className="imgDiv">
-                        <img className="imgCls" src='img/ATF_logo_sm.JPG' alt="ATF logo" />
+                        <img className="imgCls" src='img/ATF_logo_sm.jpg' alt="ATF logo" />
                         <small className="ms-1 my-auto">Simple Recipes That Make You Feel Good</small>
                     </div>
                 </div>
