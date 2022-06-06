@@ -5,6 +5,7 @@ import SecondHead from "../components/secondhead/secondhead.js"
 import Footer from "../components/footer/footer.js"
 
 function UserLogin() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Head />

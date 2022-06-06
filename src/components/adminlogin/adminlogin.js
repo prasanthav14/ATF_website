@@ -53,9 +53,9 @@ function Adminlogin() {
             const formData = { name: inputs.name, email: inputs.email }
             await addDoc(collection(db, "admin"), formData)
                 .then(() => {
-                    toast.warning(`${inputs.name} - added into the Admin-list`, { onClose: () => Navigate(-1) });
+                    toast.success(`${inputs.name} - added into the Admin-list`, { onClose: () => Navigate(-1) });
                 });
-        } catch (error) { console.log(error); }
+        } catch (error) { console.error(error); }
         setInputs({ name: "", email: "" })
     }
 

@@ -102,7 +102,7 @@ function Adminform() {
             await addDoc(collection(db, "userData"), formData).then(() => {
                 toast.success(`New Post Submitted Successfully`);
             });
-        } catch (error) { console.log(error); }
+        } catch (error) { console.error(error); }
         setText({ title: "", breif: "", opTitle: "", opCont: "", ytlink: "", iglink: "" });
         setCheck({ vegan: false, meals: false, eggfree: false, bev: false });
         setfile("");

@@ -23,16 +23,16 @@ function Footer() {
 
                 <div className="row">
                     <div className="d-flex justify-content-center my-auto col-lg-6 col-12">
-                        <img className="me-2" alt="atf-logo-sm" src='img/ATF_logo_sm.jpg' width="30" height="30" />
+                        <img className="me-2" alt="atf-logo-sm" src={`${process.env.PUBLIC_URL}/img/ATF_logo_sm.jpg`} width="30" height="30" />
                         <p>&copy; 2022 Company, Inc</p>
                     </div>
                     <div style={{ textAlign: "center"}} className="d-flex justify-content-center my-auto col-lg-6 col-12">
-                        <a href={process.env.REACT_APP_YT_LINK} style={{color:"black"}}>
-                            <label className="pointerCls" htmlFor='yticon'>Youtube</label>
+                        <a target="_blank" rel="noreferrer noopener" href={process.env.REACT_APP_YT_LINK} style={{color:"black"}}>
+                            <label  style={{fontWeight: 600}} className="pointerCls" htmlFor='yticon'>Youtube</label>
                             <YouTubeIcon id="yticon" className="pointerCls me-2" sx={{ fontSize: "40px" }} />
                         </a>
-                        <a href={process.env.REACT_APP_IG_LINK} style={{color:"black"}}>
-                            <label className="mt-1 pointerCls" htmlFor='igicon'>Instagram</label>
+                        <a target="_blank" rel="noreferrer noopener" href={process.env.REACT_APP_IG_LINK} style={{color:"black"}}>
+                            <label style={{fontWeight: 600}} className="mt-1 pointerCls" htmlFor='igicon'>Instagram</label>
                             <InstagramIcon className="mt-1 pointerCls" id="igicon" sx={{ fontSize: "30px" }} />
                         </a>
                     </div>

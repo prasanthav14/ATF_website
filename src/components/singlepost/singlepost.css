@@ -4,7 +4,6 @@
     color: crimson;
     cursor: pointer;
 }
-
 .unlikeCls {
     text-decoration: none;
     color: darkgrey;
@@ -13,7 +12,7 @@
 }
 .postImg{
     height:auto;
-    width: 30%;
+    width: 60%;
 }
 
 .commentDiv {
@@ -47,7 +46,7 @@
     width: max-content;
     position: absolute;
     bottom: 2.5rem;
-    right: 1rem;
+    right: 4rem;
 }
 
 .singleigDiv {
@@ -57,5 +56,5 @@
     width: max-content;
     position: absolute;
     bottom: 3rem;
-    right: 5rem;
+    right: 1rem;
 }

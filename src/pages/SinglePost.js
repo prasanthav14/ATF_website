@@ -8,6 +8,7 @@ import Footer from "../components/footer/footer.js"
 
 
 function SinglePost() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Head />

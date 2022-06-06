@@ -5,6 +5,7 @@ import Allposts from "../components/allposts/allposts.js"
 import Footer from "../components/footer/footer.js"
 
 function AllPosts() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Head />

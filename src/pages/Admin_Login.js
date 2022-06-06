@@ -4,6 +4,7 @@ import Adminlogin from "../components/adminlogin/adminlogin.js"
 import Footer from "../components/footer/footer.js"
 
 function AdminLogin() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Head />

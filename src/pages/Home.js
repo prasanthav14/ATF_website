@@ -8,6 +8,7 @@ import Cooklist from "../components/cooklist/cooklist.js"
 import Footer from "../components/footer/footer.js"
 
 function Home() {
+  window.scrollTo(0, 0);
   return (
     <>
       <Head />

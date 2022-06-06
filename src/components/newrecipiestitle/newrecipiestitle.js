@@ -7,10 +7,11 @@ function Newrecipiestitle() {
     const navigate = useNavigate();
 
     return (
+        <div className='container'>
             <div className='row correctionCls'>
-                <div className='col-lg-4' style={{ textAlign: "center" }}>
+                <div className='col-lg-4 d-none d-lg-block' style={{ textAlign: "center" }}>
                     <div className="imgDiv">
-                        <img className="imgCls" src='img/ATF_logo_sm.jpg' alt="ATF logo" />
+                        <img className="imgCls" src={`${process.env.PUBLIC_URL}/img/ATF_logo_sm.jpg`} alt="ATF logo" />
                         <small className="ms-1 my-auto">Simple Recipes That Make You Feel Good</small>
                     </div>
                 </div>
@@ -21,6 +22,7 @@ function Newrecipiestitle() {
                     <p className="link-dark" onClick={() => { navigate('/allposts') }}> <FastForwardIcon fontSize="large" /> </p>
                 </div>
             </div>
+            </div >
     )
 }
 export default Newrecipiestitle

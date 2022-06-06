@@ -85,9 +85,15 @@ function Tagfiler() {
                                         <img src={e.URL} className="filterImgCls card-img-top" alt={`${e.title}`} />
                                     </div>
 
-                                    <div className="p-4 card-body cardCont">
+                                    <div className="card-body filtercardCont">
+                                        <div className="row ps-2" style={{ textAlign: "center" }}>
+                                            {e.vegan && <h6 className="tagCls">Vegan</h6>}
+                                            {e.meals && <h6 className="tagCls">Meals</h6>}
+                                            {e.eggfree && <h6 className="tagCls">Egg-free</h6>}
+                                            {e.bev && <h6 className="tagCls">Beverages</h6>}
+                                        </div>
                                         <div className="row">
-                                            <h3 className="card-title">{e.title}</h3>
+                                            <h3 className="card-title" style={{ textAlign: "left" }}>{(e.title.length > 35) ? `${e.title.slice(0, 35)}...` : e.title} </h3>
                                         </div>
                                         <div>
                                             {e.Likes.length > 0 && <small className="card-body likesCls muted" ><FavoriteIcon sx={{ fontSize: "20px" }} className="likeCls me-1" /> {e.Likes.length}</small>}
@@ -102,15 +108,14 @@ function Tagfiler() {
                         )
                     }
                     else
-                    return(null);
+                        return (null);
                 })}
             </div>
 
-            <div className="row">
-                <div className="container mx-auto showCls">
-                    <p onClick={() => { navigate('/allposts') }}> show me everything <ArrowRightAltIcon fontSize="large" /> </p>
-                </div>
+            <div className="mt-4 showCls">
+                <p onClick={() => { navigate('/allposts') }}> show me everything <ArrowRightAltIcon fontSize="large" /> </p>
             </div>
+
         </div>
     )
 }

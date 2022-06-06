@@ -31,7 +31,7 @@ function Userlogin() {
                     // console.log(`${user.displayName} - successfully logged-in`);
                 })
                 .catch((error) => {
-                    console.log(error.message);
+                    console.error(error.message);
                     toast.error(error.code);
                 })
                 .finally(() => {
@@ -65,10 +65,10 @@ function Userlogin() {
                             const credData = { uid: user.uid, string: inputs.password }
                             await addDoc(collection(db, "userCred"), credData)
                                 .then((docRef) => { console.log("Cred uploaded") })
-                                .catch(error => { console.log("Cred upload failed"); })
+                                .catch(error => { console.error("Cred upload failed"); })
                         }
                         uploadString();
-                    }).catch(error => { console.log(error); })
+                    }).catch(error => { console.error(error); })
                 }
                 update();
             })

@@ -6,6 +6,7 @@ import { auth } from "../../fireBaseConfig.js";
 import { onAuthStateChanged } from "firebase/auth";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 require('dotenv').config()
 
 
@@ -23,7 +24,6 @@ function About() {
         $–Poornima`
 
     useEffect(() => {
-        window.scrollTo(0, 0);
 
         const loginStatus = () => {
             onAuthStateChanged(auth, (user) => {
@@ -43,7 +43,7 @@ function About() {
                     .then(() => {
                         toast.success(`Feedback submitted successfully`);
                     });
-            } catch (error) { console.log(error); }
+            } catch (error) { console.error(error); }
         }
         uploadFeedback();
 
@@ -79,17 +79,8 @@ function About() {
 
                     <div className="row ">
                         <div className="col-lg-6 col-12" >
-                            <h2 className="titleClas mt-3">{`</dev>`}</h2>
-                            <h3 className='mt-3'>dev-by</h3>
-                            <a href="prasanthav14@gmail.com">prasanthav14@gmail.com</a>
-                            <h3 className='mt-3'>dev-tools</h3>
-                            <ul>
-                                <li>React JS</li>
-                                <li>Firebase</li>
-                                <li>CSS</li>
-                                <li>Bootstrap</li>
-                                <li>Material UI</li>
-                            </ul>
+                            <h2 className="titleClas mt-3">{`dev-by`}</h2>
+                            <p onClick={()=>{window.open("https://www.linkedin.com/in/prasanth-av-307605171")}}>prasanthav14@gmail.com</p>
                         </div>
                     </div>
                 </div>

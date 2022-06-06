@@ -6,7 +6,7 @@ import Footer from "../components/footer/footer.js"
 
 
 function AdminForm() {
-
+  window.scrollTo(0, 0);
   return (
     <>
       <Head />

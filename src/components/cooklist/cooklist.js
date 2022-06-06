@@ -20,12 +20,12 @@ function Cooklist() {
 
         const fireStoreData = async () => {
             await getDocs(collection(db, 'userData')).then((res) => {
-                const textRef = res.docs.map(doc => { 
-                    if (doc.exists()) 
-                    return ({ ...doc.data(), id: doc.id })
+                const textRef = res.docs.map(doc => {
+                    if (doc.exists())
+                        return ({ ...doc.data(), id: doc.id })
                     else
-                    return(null);
-                 })
+                        return (null);
+                })
                 textRef.map(async (e) => {
                     const gsReference = ref(storage, e.snapRef);
                     await getDownloadURL(gsReference)
@@ -34,7 +34,7 @@ function Cooklist() {
                             setdbData(prev => [...prev, e])
                             setIsLoading(false)
                         }).catch(error => { console.error(error) })
-                        return(null);
+                    return (null);
                 })
             })
         }
@@ -67,13 +67,13 @@ function Cooklist() {
                 {dbData.map((e, index) => {
                     if (index < 3) {
                         return (
-                            <div key={index} className="col-lg-4 col-12 mt-3 mx-auto">
+                            <div key={index} className="col-lg-4 col-md-6 col-12 mt-3 mx-auto">
                                 <div onClick={() => { handleClick(e.id) }} className="cardCls mx-auto card">
                                     <div className="cardImgdiv">
                                         <img src={e.URL} className="cardImg card-img-top" alt={e.title} />
                                     </div>
 
-                                    <div className="p-4 card-body cardCont">
+                                    <div className="card-body cardCont">
                                         <div className="row ps-2" style={{ textAlign: "center" }}>
                                             {e.vegan && <h6 className="tagCls">Vegan</h6>}
                                             {e.meals && <h6 className="tagCls">Meals</h6>}
@@ -81,11 +81,11 @@ function Cooklist() {
                                             {e.bev && <h6 className="tagCls">Beverages</h6>}
                                         </div>
                                         <div className="row">
-                                            <h3 className="card-title">{e.title}</h3>
-                                            <hr />
-                                            <p className="card-text" style={{ textAlign: "justify" }}>{e.breif.slice(0, 200) + "..."}</p>
+                                            <h3 className="card-title">{(e.title.length > 50) ? `${e.title.slice(0, 50)}...` : e.title} </h3>
+                                            {/* <hr /> */}
+                                            {/* <p className="card-text" style={{ textAlign: "justify" }}>{e.breif.slice(0, 200) + "..."}</p> */}
                                         </div>
-                                        <div className="row p-2 mt-2 mb-2 my-auto">
+                                        <div className="row mt-2 mb-2 my-auto">
                                             {/* <div className="ytDiv">
                                                     {(e.ytlink != "") && <a href={e.ytlink} className="linkCls"><YouTubeIcon sx={{ fontSize: "45px" }} className="ytCls" /></a>}
                                                 </div>
@@ -100,7 +100,7 @@ function Cooklist() {
                                             </div>
                                         </div>
                                         <div>
-                                        {e.Likes.length>0 && <small className="card-body likesCls muted" ><FavoriteIcon sx={{ fontSize: "20px" }} className="likeCls me-1" /> {e.Likes.length}</small>}
+                                            {e.Likes.length > 0 && <small className="card-body likesCls muted" ><FavoriteIcon sx={{ fontSize: "20px" }} className="likeCls me-1" /> {e.Likes.length}</small>}
                                         </div>
                                         <div>
                                             <small className="card-body preCls">{new Date(e.timeCreated).toLocaleString()}</small>
@@ -112,7 +112,7 @@ function Cooklist() {
                         )
                     }
                     else
-                    return(null);
+                        return (null);
                 })}
             </div>
             {/* <div className="row">

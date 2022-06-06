@@ -32,8 +32,6 @@ function Singlepost() {
 
     useEffect(() => {
 
-        window.scrollTo(0, 0);
-
         const getDbData = async () => {
             const docRef = doc(db, "userData", key);
             const docSnap = await getDoc(docRef)
@@ -73,15 +71,15 @@ function Singlepost() {
     const pageloaded = () => {
         setIsLoading(false)
 
-        console.log('pageloaded')
+        // console.log('pageloaded')
         const user = auth.currentUser;
-            console.log(user);
+            // console.log(user);
            if (user) {
-               console.log('inside user')
+            //    console.log('inside user')
                setCurrentuser(user);
                if (likes) {
-                   console.log(likes);
-                   console.log(likes.filter(e => (e.uid === user.uid)).length);
+                //    console.log(likes);
+                //    console.log(likes.filter(e => (e.uid === user.uid)).length);
                    setLiked(likes.filter(e => (e.uid === user.uid)).length > 0 ? true : false)
                }
            }
@@ -134,7 +132,7 @@ function Singlepost() {
                             console.log("unliked ");
                         })
                     }
-                    catch (error) { console.log(error); }
+                    catch (error) { console.error(error); }
                 }
                 else {
                     // console.log('User signed out');
@@ -167,7 +165,7 @@ function Singlepost() {
                                     // console.log("comments updated: " + user.displayName);
                                 })
                             }
-                            catch (error) { console.log(error); }
+                            catch (error) { console.error(error); }
                         }
                         uploadComment();
                         setText("");
@@ -187,7 +185,7 @@ function Singlepost() {
 
     return (
         <div className="container">
-            <div className="row mx-auto my-auto">
+            <div className="row mx-auto my-auto ">
 
                 <div hidden={!isLoading}>
                     <LoadingSpinner />
@@ -195,12 +193,12 @@ function Singlepost() {
 
                 <div hidden={isLoading} className="card bg-light ms-1 me-1">
                     <div>
-                        <img src={dbData.URL} onLoad={pageloaded} className="row mt-1 mb-1 postImg mx-auto" alt={dbData.title} />
+                        <img src={dbData.URL} onLoad={pageloaded} className="row mt-2 postImg mx-auto card-img-top" alt={dbData.title} />
                         {/* onLoad={setIsLoading(false)} */}
                     </div>
 
-                    <div className="card-body">
-                        <div className="row" style={{ textAlign: "center" }}>
+                    <div className="card-body ">
+                        <div className="row ps-3" style={{ textAlign: "center" }}>
                             {dbData.vegan && <h6 className="tagCls">Vegan</h6>}
                             {dbData.meals && <h6 className="tagCls">Meals</h6>}
                             {dbData.eggfree && <h6 className="tagCls">Egg-free</h6>}
@@ -213,10 +211,10 @@ function Singlepost() {
                         {dbData.opCont && dbData.opCont.split('$').map((e, index) => (<p key={index} style={{ textAlign: "justify" }} className="card-text">{e}</p>))}
                         <div className="row mt-2">
                             <div className="singleytDiv">
-                                {(dbData.ytlink !== "") && <a href={dbData.ytlink} className="linkCls"><YouTubeIcon sx={{ fontSize: "45px" }} className="ytCls" /></a>}
+                                {(dbData.ytlink !== "") && <a href={dbData.ytlink} target="_blank" rel="noreferrer noopener" className="linkCls"><YouTubeIcon sx={{ fontSize: "45px" }} className="ytCls" /></a>}
                             </div>
                             <div className="singleigDiv">
-                                {(dbData.iglink !== "") && <a href={dbData.iglink} className="linkCls"> <InstagramIcon sx={{ fontSize: "30px" }} className="igCls" /></a>}
+                                {(dbData.iglink !== "") && <a href={dbData.iglink} target="_blank" rel="noreferrer noopener" className="linkCls"> <InstagramIcon sx={{ fontSize: "30px" }} className="igCls" /></a>}
                             </div>
                         </div>
                         <h6 className="card-text"><small className="preCls text-muted">{new Date(dbData.timeCreated).toLocaleString()}</small></h6>

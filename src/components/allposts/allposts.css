@@ -1,0 +1,65 @@
+.allcardCls {
+    /* width: 22rem; */
+    width: 93%;
+    height: 100%;
+    background-color: whitesmoke;
+    margin: auto;
+}
+.allcardCls:hover {
+    background-color: linen;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.allcardImgdiv {
+    width: 100%;
+    height: min-content;    
+     /* height: 100% */
+}
+.allcardImg {
+    width: 100%;
+    height: 100%
+}
+.allcardCont {
+    /* background-color: #fdf497 ; */
+    height: min-content;
+    width: 100%;
+
+    margin-bottom: 5rem;
+    /* font-family: cursive; */
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Neucha', cursive;
+}
+
+.ytDiv {
+    padding: 0%;
+    margin: 0%;
+    width: max-content;
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
+}
+
+.igDiv {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 8px;
+    width: max-content;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+.ytCls {
+    text-decoration: none;
+    color: red;
+    margin-right: 1rem;
+}
+.igCls {
+    margin-right: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
