@@ -1,0 +1,57 @@
+.filterbodyCls {
+    height: 100%;
+    width: 99%;
+    /* margin: auto; */
+}
+.btnCls{
+    font-size: smaller;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 0;
+    border-width: medium;
+}
+.filtercardCls{
+    width: 93%;
+    margin: auto;
+    /* height: 62rem; */
+    height: 100%;
+    background-color: whitesmoke;
+    /* background-color: aquamarine; */
+}
+.filtercardCls:hover {
+    /* background-color: cornsilk; */
+    background-color: blanchedalmond;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.filterImgdiv{
+    width: 100%;
+    height: min-content;
+    /* height: min-content */
+}
+.filterImgCls{
+    width:100%;
+    height: 100%
+}
+.filtercardCont {
+    height: min-content;
+    width: 100%;
+    margin-bottom: 4.5rem;
+/* background-color: khaki; */
+    /* font-family: 'Kite One', sans-serif; */
+    /* font-family: 'Amatic SC', cursive; */
+    /* font-family: 'Rum Raisin', sans-serif; */
+
+    font-family: 'Neucha', cursive;
+}
+.showCls {
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    color: orangered;
+}
+
+:hover.showCls {
+    font-size: larger;
+}

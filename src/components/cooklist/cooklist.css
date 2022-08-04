@@ -1,0 +1,99 @@
+.bodyCls {
+    height: 100%;
+    width: 98%;
+    /* margin: auto; */
+}
+
+.cardCls {
+    /* width: 22rem; */
+    width: 93%;
+    height: 100%;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+.cardImgdiv {
+    width: 100%;
+    height: min-content; 
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%
+}
+
+.cardCont {
+    height: min-content;
+    width: 100%;
+    margin-bottom: 5.5rem;
+
+    /* font-family: 'Kite One', sans-serif; */
+    /* font-family: 'Amatic SC', cursive; */
+    /* font-family: 'Rum Raisin', sans-serif; */
+
+    font-family: 'Neucha', cursive;
+}
+
+.tagCls {
+    /* background-color: rgb(255, 235, 147); */
+    background-color: crimson;
+    color: #fff;
+    border-radius: 10px;
+    width: max-content;
+    margin-right: .75rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+    font-size: small;
+    padding: 4px
+}
+
+.cardCls:hover {
+    background-color: linen;
+    /* background-image: url("https://www.transparenttextures.com/patterns/wet-snow.png"); */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.favDiv {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 8px;
+    width: max-content;
+    position: absolute;
+    bottom: 3.2rem;
+    left: 2.5rem;
+}
+
+.linkCls {
+    text-decoration: none;
+}
+
+.preCls {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0%;
+    margin: 0%;
+    font-size: x-small;
+    color: grey;
+}
+
+.likesCls {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 1rem;
+    padding: 0%;
+    margin: 0%;
+    font-size: small;
+    /* color: grey; */
+}
+.newpostCls {
+    text-decoration: none;
+    color: gold;
+    text-align: right;
+}

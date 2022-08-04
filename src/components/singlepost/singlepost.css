@@ -1,0 +1,60 @@
+.likeCls {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: crimson;
+    cursor: pointer;
+}
+.unlikeCls {
+    text-decoration: none;
+    color: darkgrey;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.postImg{
+    height:auto;
+    width: 60%;
+}
+
+.commentDiv {
+    margin-top: 1rem;
+    padding: 10px;
+    border: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.commentboxDiv {
+    margin-top: 1rem;
+    background-color: whitesmoke;
+}
+
+.commentText {
+    color: grey;
+}
+
+.commentTime{
+    text-align: right;
+     color: grey;
+     font-size: x-small;
+}
+
+.singleytDiv {
+    padding: 0%;
+    margin: 0%;
+    width: max-content;
+    position: absolute;
+    bottom: 2.5rem;
+    right: 4rem;
+}
+
+.singleigDiv {
+    padding: 0%;
+    margin: 0%;
+    padding-top: 8px;
+    width: max-content;
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+}
